@@ -21,13 +21,10 @@ struct Routine {
     }
     
     func startRoutine(affecting bodyCondition: BodyCondition) {
-        print("""
-              --------------
-              \(self.name)을 실행합니다.
-              ...🏃🏻💦💦
-              """)
         for exerciseEvent in routineContents {
             exerciseEvent.action(bodyCondition)
+            print(exerciseEvent.name)
         }
     }
 }
+

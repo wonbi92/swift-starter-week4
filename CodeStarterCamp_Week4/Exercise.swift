@@ -64,8 +64,10 @@ enum Exercise {
             }
         case .activeRest:
             return { bodyCondition in
-                bodyCondition.tiredness -= Int.random(in: 10...20)
+                bodyCondition.tiredness -= Int.random(in: 15...25)
             }
         }
     }
 }
+
+
